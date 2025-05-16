@@ -19,3 +19,7 @@ noch (nochange) // Same as above, except if the stored value and the current val
 prin (print) // You have to use Dbgview, or an alternate method to view DbgPrint calls, because this function prints the current addresses in the list and their associated values using DbgPrint.
 
 fadd [address] [value] // Stands for float add. Floats are commonly used in video games for values such as positional coordinates, health, etc, and this driver was developed to target those values. As stated above, when you supply the address, please make sure it follows the format 0000031ACDFE1EB4. Also, the value you supply will be parsed by RtlCharToInteger, so only non-negative whole numbers will be recognized. That value will then be casted to a FLOAT and added to the current value stored at the address.
+
+Before starting the driver via command line, make sure you have created the input file called "userInput.txt" and placed it into the C:\Windows folder (or wherever your Windows directory is). This is because the driver searches through the SystemRoot directory for "userInput.txt".
+
+This is where you will supply the actual input using the above commands.

@@ -505,7 +505,7 @@ NTSTATUS DriverEntry(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)
 					else if (strcmp(buffer, "prin") == 0) { print_addr(); } // Print the non-null addresses in the mapped section and their associated values
 					else if (strcmp(buffer, "fadd") == 0) { fadd(buffer); } // Add a floating point 
 
-					DbgPrintLine("%s", buffer); // For debugging purposes and see what was put in the buffer
+					//DbgPrintLine("%s", buffer); // For debugging purposes and see what was put in the buffer
 				}
 
 				if (mapFlag) { finish(); } // If mapping set earlier, finish and cleanup our resources used
