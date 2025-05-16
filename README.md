@@ -22,4 +22,4 @@ fadd [address] [value] // Stands for float add. Floats are commonly used in vide
 
 Before starting the driver via command line, make sure you have created the input file called "userInput.txt" and placed it into the C:\Windows folder (or wherever your Windows directory is). This is because the driver searches through the SystemRoot directory for "userInput.txt".
 
-This is where you will supply the actual input using the above commands.
+Please enter your commands at the beginning line of this file.
